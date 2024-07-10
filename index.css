@@ -1,0 +1,287 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #222121  ;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom: 1px solid #222121;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .description {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #222121;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #222121;
+    width: 100%;
+    line-height: 50px;
+    text-shadow: 2px 2px;
+}
+
+blockquote {
+    font-family: 'comic sans-ms';
+    color: #222121;
+    font-size: 15px;
+
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    font-family: 'comic sans-ms';
+}
+
+img {
+    width: 55%;
+    border-radius: 50%;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.recipe-list {
+    width: 100%;
+    position:relative;
+    display:ruby;
+    flex-wrap: wrap;
+}
+
+.gambar-recipe {
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gambar-recipe img {
+    width: 80%;
+    border-radius: 30px;
+    height: auto;
+    margin: 30px;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #222121;
+    border-radius: 10%;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+    
+
+.gambar-recipe:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.gambar-recipe h1 {
+    font-family: 'comic sans-ms';
+    font-weight: 800;
+    font-size: 100%;
+    text-align: center;
+    color: #222121;
+}
+
+.gambar-recipe p {
+    font-size: 15px;
+    padding: 10px;
+    text-decoration:none;
+    text-align: left;
+    
+}
+
+.gambar-recipe a{
+    text-align: center;
+    font-family: 'comic sans-ms';
+    color: white;
+    font-size: 20px;
+}
+
+#contact{
+    background: #dedede;
+    padding: 50ox 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222121;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.footer-section a{
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between social media icons */
+    
+}
+
+.footer-section a img{
+    width: 30px ;/* Adjust the size of the social media icons */
+    border-radius: 40% ;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991.98x) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .gambar-recipe img {
+        width: 50%;
+    }
+}
